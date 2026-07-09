@@ -9,7 +9,7 @@ public class SalaryInfo {
     private static final int RATE_INDEX = 3;
     private static final int DATE_INDEX = 0;
     private static final int NAME_INDEX = 1;
-    private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
 
     public String getSalaryInfo(String[] names, String[] data, String dateFrom, String dateTo) {
         LocalDate to = LocalDate.parse(dateTo, formatter);
